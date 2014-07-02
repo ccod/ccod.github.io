@@ -1,0 +1,13 @@
+.backdrop {
+    background-image: url(../img/color_backdrop.png);
+    background-size:  cover;
+}
+
+.profile-image {
+    border-radius: 50%;
+    height: 11%;
+    width: 11%;
+    border-style: solid;
+    border-color: white;
+    border-width: .5em;
+}
