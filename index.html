@@ -3,18 +3,77 @@
   <head>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/shadowbox.css">
+    <script type="text/javascript" src="js/shadowbox.js"></script>
+    <script type="text/javascript"> Shadowbox.init(); </script>
   </head>
   <body class="backdrop">
+    <!-- <div class="container-fluid"> -->
+    <!--   <ul class="row nav nav-pills" style="margin-top:1%;"> -->
+    <!-- 	<li class="col-md-offset-7 col-md-1 btn nav-btn">Home</li> -->
+    <!-- 	<li class="col-md-1 btn nav-btn">Code</li> -->
+    <!-- 	<li class="col-md-1 btn nav-btn">Art</li> -->
+    <!-- 	<li class="col-md-1 btn nav-btn">Travels</li> -->
+    <!--   </ul> -->
+    <!-- </div> -->
     <div class="container-fluid">
-      <div class="row">
-	<ul class="nav navbar-nav">
-	  <li>Home</li>
-	  <li>Code</li>
-	  <li>Art</li>
-	  <li>Travels</li>
-	</ul>
+      <div class="side-bar card-color">
+	<img class="profile-image" src="img/profile_pic.png"/>
+	<h4>Name:</h4><div>Christopher Codrington</div>
+	<h4>Occupation:</h4><div>Software Engineer</div>
+	<h4>Resume:</h4><a href="https://www.linkedin.com/pub/christopher-codrington/20/569/668">My Linkedin profile</a>
+	<h4>Contact:</h4><a href="mailto:chcodrington@gmail.com">My Email</a>
       </div>
-    <img class="profile-image" src="img/profile_pic.png">
-    <h1>Hello world</h1>
+      <div class="row card-height">
+	<div class="col-md-offset-3 col-md-8 card-color">
+	  <h3>Introduction</h3>
+	  <p>As a software engineer, it is your occupational imperitive that you a lifelong learner. That said, I apply this principal to more than just software.</p>
+	</div>
+      </div>
+      <div class="row card-height">
+	<div class="col-md-offset-3 col-md-8 card-color">
+	  <h3>Programming takeaways</h3>
+	  <p>Confident in languages like Ruby, Javascript, Clojure.
+	    I have also dabbled in a number of others in my spare time.</p>
+	  <p>I like the functional ideas on managing complexity. 
+	    Namely immutable data structures and the culture of sequestering 
+	    stately things in a corner with a red flag.</p>
+	  <p>I prefer to establish the route to deployment early, as the 
+	    last mile is made much harder if there is trouble that makes you 
+	    have to re-evaluate the way your system is structured 
+	    (like that shiny tool you thought was going to make your work so much easier).</p>
+	  <p>wrote things from Postgres triggers to finicky CSS styles. 
+	    I am quite confident in my ability to jump into strange waters 
+	    and not drown, I probably owe this quality to my diverse set of interests.</p>
+	</div>
+      </div>
+      <div class="row card-height">
+	<div class="col-md-offset-3 col-md-8 card-color">
+	  <h3>Artistic Pursuits</h3>
+	  <p>Currently the one that has my attention right now would have to be 3d modeling in zbrush.</p>
+	  <a href="img/figure_1.jpg" rel="shadowbox">
+	    <img src="img/fig_1_thumb.jpg" height="100" width="100"/>
+	  </a>
+	  <a href="img/figure_2.jpg" rel="shadowbox">
+	    <img src="img/fig_2_thumb.jpg" height="100" width="100"/>
+	  </a>
+	  <a href="img/yell.png" rel="shadowbox">
+	    <img src="img/yell_thumb.png" height="100" width="100"/>
+	  </a>
+	  <a href="img/female_bust.jpg" rel="shadowbox">
+	    <img src="img/female_bust_thumb.jpg" height="100" width="100"/>
+	  </a>
+	  </br>
+	  <iframe style="margin-top:.5em;" width="420" height="315" src="//www.youtube.com/embed/e_prWpknICY" frameborder="0" allowfullscreen></iframe>
+
+	</div>
+      </div>
+      <div class="row card-height">
+	<div class="col-md-offset-3 col-md-8 card-color">
+	  <h3>Travel Pursuits</h3>
+	  <p>I have had the great fortune to have traveled to a good number of places, but my wanderlust is no where near being sated. The background image was actually taken by me on a cycling trip to Lijiang summer of 2013.</p>
+	</div>
+      </div>
+    </div>
   </body>
 </html>

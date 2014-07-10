@@ -1,13 +1,32 @@
 .backdrop {
-    background-image: url(../img/color_backdrop.png);
-    background-size:  cover;
+    background-image: url(../img/honey_im_subtle.png);
+    background-size:  repeat;
 }
 
+.text-center { text-align: center; }
+.card-height { margin-top: 1.5em;  }
+.center-card { margin-top: 10%; }
+
+.side-bar {
+    position: fixed;
+    margin-top: 1.5em;
+    width: 22%;
+    padding: 1.5em;
+}
 .profile-image {
     border-radius: 50%;
-    height: 11%;
-    width: 11%;
+    height: 12em;
+    width: 12em;
     border-style: solid;
     border-color: white;
     border-width: .5em;
+}
+
+.card-color {
+    background: rgba(255,255,255,0.8);
+    box-shadow: -2px 2px 3px #888888;
+}
+
+.nav-btn {
+    margin-right: 1%;
 }
