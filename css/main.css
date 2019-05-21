@@ -1,9 +1,11 @@
 html, body {
     height: 100%;
+    background-color: #f5f5f5;
 }
 .particle__background {
     position: absolute;
-    height: 100%;
+    width: 100%;
+    height: 30em;
     background-color: #38363c;
 }
 
