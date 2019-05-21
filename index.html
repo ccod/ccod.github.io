@@ -1,79 +1,134 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/shadowbox.css">
-    <script type="text/javascript" src="js/shadowbox.js"></script>
-    <script type="text/javascript"> Shadowbox.init(); </script>
-  </head>
-  <body class="backdrop">
-    <!-- <div class="container-fluid"> -->
-    <!--   <ul class="row nav nav-pills" style="margin-top:1%;"> -->
-    <!-- 	<li class="col-md-offset-7 col-md-1 btn nav-btn">Home</li> -->
-    <!-- 	<li class="col-md-1 btn nav-btn">Code</li> -->
-    <!-- 	<li class="col-md-1 btn nav-btn">Art</li> -->
-    <!-- 	<li class="col-md-1 btn nav-btn">Travels</li> -->
-    <!--   </ul> -->
-    <!-- </div> -->
-    <div class="container-fluid">
-      <div class="side-bar card-color">
-	<img class="profile-image" src="img/profile_pic.png"/>
-	<h4>Name:</h4><div>Christopher Codrington</div>
-	<h4>Occupation:</h4><div>Software Engineer</div>
-	<h4>Resume:</h4><a href="https://www.linkedin.com/pub/christopher-codrington/20/569/668">My Linkedin profile</a>
-	<h4>Contact:</h4><a href="mailto:chcodrington@gmail.com">My Email</a>
-      </div>
-      <div class="row card-height">
-	<div class="col-md-offset-3 col-md-8 card-color">
-	  <h3>Introduction</h3>
-	  <p>As a software engineer, it is your occupational imperitive that you a lifelong learner. That said, I apply this principal to more than just software.</p>
-	</div>
-      </div>
-      <div class="row card-height">
-	<div class="col-md-offset-3 col-md-8 card-color">
-	  <h3>Programming takeaways</h3>
-	  <p>Confident in languages like Ruby, Javascript, Clojure.
-	    I have also dabbled in a number of others in my spare time.</p>
-	  <p>I like the functional ideas on managing complexity. 
-	    Namely immutable data structures and the culture of sequestering 
-	    stately things in a corner with a red flag.</p>
-	  <p>I prefer to establish the route to deployment early, as the 
-	    last mile is made much harder if there is trouble that makes you 
-	    have to re-evaluate the way your system is structured 
-	    (like that shiny tool you thought was going to make your work so much easier).</p>
-	  <p>wrote things from Postgres triggers to finicky CSS styles. 
-	    I am quite confident in my ability to jump into strange waters 
-	    and not drown, I probably owe this quality to my diverse set of interests.</p>
-	</div>
-      </div>
-      <div class="row card-height">
-	<div class="col-md-offset-3 col-md-8 card-color">
-	  <h3>Artistic Pursuits</h3>
-	  <p>Currently the one that has my attention right now would have to be 3d modeling in zbrush.</p>
-	  <a href="img/figure_1.jpg" rel="shadowbox">
-	    <img src="img/fig_1_thumb.jpg" height="100" width="100"/>
-	  </a>
-	  <a href="img/figure_2.jpg" rel="shadowbox">
-	    <img src="img/fig_2_thumb.jpg" height="100" width="100"/>
-	  </a>
-	  <a href="img/yell.png" rel="shadowbox">
-	    <img src="img/yell_thumb.png" height="100" width="100"/>
-	  </a>
-	  <a href="img/female_bust.jpg" rel="shadowbox">
-	    <img src="img/female_bust_thumb.jpg" height="100" width="100"/>
-	  </a>
-	  </br>
-	  <iframe style="margin-top:.5em;" width="420" height="315" src="//www.youtube.com/embed/e_prWpknICY" frameborder="0" allowfullscreen></iframe>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/main.css" >
+	</head>
+	<body>
+		<div id="particles-js" class="particle__background"> 
+		<section class="container content__spacing content__background">
+			<div class="row text__color">
+				<div class="col-md-3">
+					<h5 style="text-align:center;"><strong>Christopher Codrington</strong></h5>
+					<div class="row">
+						<div class="col">
+							<img class="img-fluid rounded-circle mx-auto d-block p-3" src="img/profile_pic.jpg">
+						</div>
+					</div>
+					<div class="social__spacing">
+						<div class="social__center">
+								<a href="https://github.com/ccod"><img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" /></a>
+								<a href="https://www.linkedin.com/in/christopher-codrington-66856920/"><img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" /></a>
+								<button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="copy email" data-clipboard-text="chcodrington@gmail.com"><img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gmail.svg" /></button>
+						</div>
+					</div>
+					<div>
+						<div class="social__center">
+							<a href="img/CCodrington_Resume.pdf" download>
+								<button class="btn btn-dark btn-sm">Download Resume</button>
+							</a>
+						</div>
+					</div>
+					<br />
+				</div>
+				<div class="col-md-9">
+					<div class="row">
+						<div class="col-md-9">
+							<h4>About</h4>
+							<p>
+								2.5 years of professional programming experience predominantly in Dental Insurance for Medicare Medicaid.
+								Spent at least 5 more years of experience as a curious hobbyist. I have skills across the spectrum of web development, from
+								front end ReactJS skills, to Postgres database triggers. I prefer solving problems using the functional programming paradigm.
+								I have a particular interest in Go, Clojure, and Javascript. The First two I find interesting because of their
+								contrasting definitions as a simple language, the third because it is a language that can be approached from a functional style,
+								and also happens to run just about anywhere. 
+							</p>
+						</div>
+					</div>
+					<br />
 
-	</div>
-      </div>
-      <div class="row card-height">
-	<div class="col-md-offset-3 col-md-8 card-color">
-	  <h3>Travel Pursuits</h3>
-	  <p>I have had the great fortune to have traveled to a good number of places, but my wanderlust is no where near being sated. The background image was actually taken by me on a cycling trip to Lijiang summer of 2013.</p>
-	</div>
-      </div>
-    </div>
-  </body>
+					<div class="row">
+						<div class="col-md-8">
+							<h5>Apricot Coffee House</h5>
+							<p>Simple single page static site for a recently opened coffee shop</p>
+						</div>
+						<div class="col-md-4">
+							<a href="https://github.com/ccod/apricot" target="_blank">
+								<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+							</a>
+							<a href="http://apricotcoffeehouse.com" class="btn btn-dark btn-sm" target="_blank">Site</a>
+						</div>
+						<div class="col-12"><hr /></div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<h5>This web site</h5>
+							<p>Recently updated. Simple, but significant improvement over its former design</p>
+						</div>
+						<div class="col-md-4">
+							<a href="https://github.com/ccod/ccod.github.io" target="_blank">
+								<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+							</a>
+						</div>
+						<div class="col-12"><hr /></div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<h5>Gosu Server</h5>
+							<p>
+								Web server written in Go. This is a hobby project I have been working on for my group of gamers
+								playing SC2. Makes use of Blizzard developer api, oauth2 authentication, for the purposes of
+								facilitating internal competition.
+							</p>
+						</div>
+						<div class="col-md-4">
+							<a href="https://github.com/ccod/gosu-server" target="_blank">
+								<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+							</a>
+						</div>
+						<div class="col-12"><hr /></div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<h5>Gosu Client</h5>
+							<p>
+								Client for Gosu Server written in Reactjs. Makes use of Antd component library, and all the the usual
+								tools surrounding a lot of reactjs apps; react-router, redux, redux-thunk, connected-react-router, and axios.
+							</p>
+						</div>
+						<div class="col-4">
+							<a href="https://github.com/ccod/gosu-client" target="_blank">
+								<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+							</a>
+						</div>
+						<div class="col-12"><hr /></div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<h5>Fkr</h5>
+							<p>
+								Command line utility written in nodejs that leverages FakerJS heavily, hence the derivative name. Essentially a template expansion tool. Takes a JSON description
+								of a data structure you want to represent and populate with dummy data. For example, you have a structure in
+								mind for representing insurance claims, you can use this to generate a batch of 40 that fits that structure
+								in order facilitate design layout work, dump into a db to trial apis etc...
+							</p>
+						</div>
+						<div class="col-md-4">
+							<a href="https://github.com/ccod/fkr" target="_blank">
+								<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>

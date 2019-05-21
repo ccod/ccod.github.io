@@ -1,32 +1,44 @@
-.backdrop {
-    background-image: url(../img/honey_im_subtle.png);
-    background-size:  repeat;
+html, body {
+    height: 100%;
+}
+.particle__background {
+    position: absolute;
+    height: 100%;
+    background-color: #38363c;
 }
 
-.text-center { text-align: center; }
-.card-height { margin-top: 1.5em;  }
-.center-card { margin-top: 10%; }
-
-.side-bar {
-    position: fixed;
-    margin-top: 1.5em;
-    width: 22%;
-    padding: 1.5em;
-}
-.profile-image {
-    border-radius: 50%;
-    height: 12em;
-    width: 12em;
-    border-style: solid;
-    border-color: white;
-    border-width: .5em;
+.content__background {
+    background-color: #ffffff;
 }
 
-.card-color {
-    background: rgba(255,255,255,0.8);
-    box-shadow: -2px 2px 3px #888888;
+.content__spacing {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top:4em;
+    min-height: 12em;
+    padding-top: 3em;
 }
 
-.nav-btn {
-    margin-right: 1%;
+.text__color {
+    color: #3f3e3e;
+}
+
+.social__center {
+    width: max-content;
+    margin: auto;
+}
+
+.social__spacing {
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 576px) {
+    .content__spacing {
+        margin-top: 0em;
+    }
+
+    .particle__background {
+        width: 100%;
+    }
 }
